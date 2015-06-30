@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/danmarshall/makerjs-ventgrid/issues"
   },
-  "homepage": "https://github.com/danmarshall/makerjs-ventgrid"
+  "homepage": "https://github.com/danmarshall/makerjs-ventgrid",
+  "dependencies": {
+    "makerjs": "^0.1.2"
+  }
 }
