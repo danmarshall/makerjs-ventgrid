@@ -1,0 +1,23 @@
+{
+  "name": "makerjs-ventgrid",
+  "version": "1.0.0",
+  "description": "A grid of circles for Maker.Js",
+  "main": "ventgrid.js",
+  "scripts": {
+    "build": "tsc ventgrid.ts --declaration",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danmarshall/makerjs-ventgrid.git"
+  },
+  "keywords": [
+    "makerjs"
+  ],
+  "author": "Dan Marshall",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/danmarshall/makerjs-ventgrid/issues"
+  },
+  "homepage": "https://github.com/danmarshall/makerjs-ventgrid"
+}
