@@ -1,5 +1,7 @@
 ///<reference path="typings/tsd.d.ts"/>
 
+//https://github.com/danmarshall/makerjs-ventgrid
+
 var makerjs: typeof MakerJs = require('makerjs');
 
 class Ventgrid implements MakerJs.IModel {
@@ -67,11 +69,3 @@ class Ventgrid implements MakerJs.IModel {
 ];
 
 module.exports = Ventgrid;
-
-/*
- * To compile this: go to the root and:
-
-   cd examples
-   tsc ventgrid.ts --declaration
-
- */
