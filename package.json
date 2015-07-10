@@ -1,6 +1,6 @@
 {
   "name": "makerjs-ventgrid",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A grid of circles for Maker.Js",
   "main": "ventgrid.js",
   "scripts": {
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/danmarshall/makerjs-ventgrid",
   "dependencies": {
-    "makerjs": "^0.1.2"
+    "makerjs": "^0.2.0"
   }
 }

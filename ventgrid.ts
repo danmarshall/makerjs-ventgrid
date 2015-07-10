@@ -6,9 +6,8 @@ var makerjs: typeof MakerJs = require('makerjs');
 
 class Ventgrid implements MakerJs.IModel {
 		
-    public id = 'ventgridInstance';
 	public units = makerjs.unitType.Millimeter;
-	public paths: MakerJs.IPath[] = [];
+	public paths: MakerJs.IPathMap = {};
 	
 	constructor(public filterRadius: number, public spacing: number, public width: number, public height: number) {
 		
@@ -38,10 +37,12 @@ class Ventgrid implements MakerJs.IModel {
 				}
 				
 				if (checkBoundary(Math.abs(x), Math.abs(y))) {
-					this.paths.push(new makerjs.paths.Circle('filter', [x, y], filterRadius));
+					var id = 'filter_' + i + '_' + iy;
+					
+					this.paths[id] = new makerjs.paths.Circle([x, y], filterRadius);
 					
 					if (alternate || (!alternate && i > 0)) {
-						this.paths.push(new makerjs.paths.Circle('filter', [-x, y], filterRadius));
+						this.paths[id + '_alt'] = new makerjs.paths.Circle([-x, y], filterRadius);
 					}
 				}
 			}
