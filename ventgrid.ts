@@ -14,7 +14,7 @@ class Ventgrid implements MakerJs.IModel {
 		var alternate = false;
 		var xDistance = 2 * filterRadius * (1 + spacing / 100);
 		var countX = Math.ceil(width / xDistance);
-		var yDistance = makerjs.tools.solveTriangleASA(60, xDistance / 2, 90);
+		var yDistance = makerjs.solvers.solveTriangleASA(60, xDistance / 2, 90);
 		var countY = Math.ceil(height / yDistance) + 1;
 		
 		function checkBoundary(x: number, y: number) : boolean {		
